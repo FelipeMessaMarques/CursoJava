@@ -1,4 +1,4 @@
-package application;
+package atividades.classe.application;
 
 import entities.Triangulo;
 import java.util.Scanner;

@@ -1,6 +1,6 @@
-package application;
+package atividades.classe.application;
 
-import entities.Produtos;
+import atividades.classe.entities.Produtos;
 import java.util.Scanner;
 
 public class ProgramProdutos {
@@ -8,18 +8,18 @@ public class ProgramProdutos {
 
         Scanner scan = new Scanner(System.in);
 
-        Produtos produto = new Produtos();
-
         System.out.println("Informe os dados do produto");
 
         System.out.print("Nome: ");
-        produto.nome = scan.nextLine();
+        String nome = scan.nextLine();
 
         System.out.print("Preco: ");
-        produto.preco = scan.nextDouble();
+        double preco = scan.nextDouble();
 
-        System.out.print("Quantidade em estoque: ");
-        produto.quantidade = scan.nextInt();
+        /*System.out.print("Quantidade em estoque: ");
+        int quantidade = scan.nextInt();*/
+
+        Produtos produto = new Produtos(nome, preco);
 
         System.out.println(produto);
 

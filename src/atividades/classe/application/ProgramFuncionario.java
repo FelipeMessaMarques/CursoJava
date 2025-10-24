@@ -1,4 +1,4 @@
-package application;
+package atividades.classe.application;
 
 import entities.Funcionario;
 import java.util.Scanner;

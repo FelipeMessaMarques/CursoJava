@@ -1,4 +1,4 @@
-package application;
+package atividades.classe.application;
 
 import entities.Retangulo;
 import java.util.Scanner;
