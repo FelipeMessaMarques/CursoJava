@@ -1,6 +1,6 @@
 package enumeracao.entities.enums;
 
-public enum StatusPedido {
+public enum OrderStatus {
     PENDING_PAYMENT,
     PROCESSING,
     SHIPPED,

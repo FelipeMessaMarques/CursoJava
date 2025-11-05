@@ -17,7 +17,7 @@ public class Program {
             }
         }
 
-        System.out.println("Valores na diagonal:");
+        System.out.println("Diagonal values:");
         for (int i = 0; i < matriz[i].length; i++) {
             System.out.print(matriz[i][i] + " ");
         }
@@ -31,7 +31,7 @@ public class Program {
             }
         }
 
-        System.out.println("\nQuantidade de números negativos: " + count);
+        System.out.println("\nNumber of negative values: " + count);
         scan.close();
     }
 }

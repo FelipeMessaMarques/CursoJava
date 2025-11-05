@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Instaciacao {
+public class Instantiation {
     public static void main(String[] args) {
 
         DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
@@ -19,11 +19,11 @@ public class Instaciacao {
 
         LocalDate d06 = LocalDate.parse("20/07/2025", fmt1);
 
-        System.out.println("D01: " + d01.toString());
-        System.out.println("D02: " + d02.toString());
-        System.out.println("D03: " + d03.toString());
-        System.out.println("D04: " + d04.toString());
-        System.out.println("D05: " + d05.toString());
-        System.out.println("D06: " + d06.toString());
+        System.out.println("Date 1: " + d01.toString());
+        System.out.println("Date 2: " + d02.toString());
+        System.out.println("Date 3: " + d03.toString());
+        System.out.println("Date 4: " + d04.toString());
+        System.out.println("Date 5: " + d05.toString());
+        System.out.println("Date 6: " + d06.toString());
     }
 }

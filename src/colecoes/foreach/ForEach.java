@@ -3,10 +3,10 @@ package colecoes.foreach;
 public class ForEach {
     public static void main(String[] args) {
 
-        String[] vect = new String[] {"Maria", "Alba", "Felipe" };
+        String[] vect = new String[] {"Mary", "Alba", "Philip" };
 
-        for (String nomes: vect) {
-            System.out.println(nomes);
+        for (String names: vect) {
+            System.out.println(names);
         }
     }
 }

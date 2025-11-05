@@ -1,17 +1,17 @@
 package enumeracao.entities;
 
-import enumeracao.entities.enums.StatusPedido;
+import enumeracao.entities.enums.OrderStatus;
 import java.util.Date;
 
-public class Pedido {
+public class Order {
 
     private Integer id;
     private Date moment;
-    private StatusPedido status;
+    private OrderStatus status;
 
-    public Pedido() {}
+    public Order() {}
 
-    public Pedido(Integer id, Date moment, StatusPedido status) {
+    public Order(Integer id, Date moment, OrderStatus status) {
         this.id = id;
         this.moment = moment;
         this.status = status;
@@ -34,17 +34,17 @@ public class Pedido {
         this.moment = moment;
     }
 
-    public StatusPedido getStatus() {
+    public OrderStatus getStatus() {
         return status;
     }
 
-    public void setStatus(StatusPedido status) {
+    public void setStatus(OrderStatus status) {
         this.status = status;
     }
 
     @Override
     public String toString() {
-        return "Pedido{" +
+        return "Order{" +
                 "id=" + id +
                 ", moment=" + moment +
                 ", status=" + status +
