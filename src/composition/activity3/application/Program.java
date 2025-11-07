@@ -16,7 +16,6 @@ import java.util.Scanner;
 public class Program {
     public static void main(String[] args) {
 
-        DateTimeFormatter formatDateOrder = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         DateTimeFormatter formatDateBirth = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
         Scanner scan = new Scanner(System.in);
