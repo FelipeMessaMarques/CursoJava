@@ -1,4 +1,4 @@
-package composition.entities;
+package composition.activity.entities;
 
 
 import java.util.Date;

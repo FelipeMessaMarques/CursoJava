@@ -1,4 +1,4 @@
-package composition.entities.enums;
+package composition.activity.entities.enums;
 
 public enum WorkLevel {
     JUNIOR,

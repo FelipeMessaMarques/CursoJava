@@ -1,8 +1,9 @@
-package composition.application;
-import composition.entities.Department;
-import composition.entities.HourContract;
-import composition.entities.Worker;
-import composition.entities.enums.WorkLevel;
+
+package composition.activity.application;
+import composition.activity.entities.Department;
+import composition.activity.entities.HourContract;
+import composition.activity.entities.Worker;
+import composition.activity.entities.enums.WorkLevel;
 
 
 import java.text.ParseException;

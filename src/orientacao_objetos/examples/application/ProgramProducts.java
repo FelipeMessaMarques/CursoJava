@@ -31,7 +31,7 @@ public class ProgramProducts {
         quantity = scan.nextInt();
         product.removeProducts(quantity);
 
-        System.out.println(produto);
+        System.out.println(product);
 
         scan.close();
     }

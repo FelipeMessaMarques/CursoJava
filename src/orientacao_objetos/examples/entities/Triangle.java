@@ -1,6 +1,6 @@
 package orientacao_objetos.examples.entities;
 
-public class Triangulo {
+public class Triangle {
     public double a, b, c;
 
     public double area() {
