@@ -8,13 +8,15 @@ import composition.activity3.entities.enums.OrderStatus;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args) {
 
-//        DateTimeFormatter formatDateOrder = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+        DateTimeFormatter formatDateOrder = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
         DateTimeFormatter formatDateBirth = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
         Scanner scan = new Scanner(System.in);
@@ -38,7 +40,7 @@ public class Program {
 
         System.out.print("How many items to this order: ");
         int orderItems = scan.nextInt();
-        Order order = new Order(status, LocalDateTime.now(), c1);
+        Order order = new Order(status, ZonedDateTime.now(ZoneId.of("America/Sao_Paulo")), c1);
 
         for (int i = 1; i <= orderItems; i++) {
             System.out.println("Enter #" + i + " item data: ");

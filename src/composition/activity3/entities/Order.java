@@ -5,31 +5,31 @@ import composition.activity3.entities.enums.OrderStatus;
 import composition.activity3.entities.Client;
 
 import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
-    private static final DateTimeFormatter formatDateBirth = DateTimeFormatter.ofPattern("dd/MM/yyyy");
     private static final DateTimeFormatter formatDateOrder = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
 
-    private LocalDateTime moment;
+    private ZonedDateTime moment;
     private OrderStatus status;
     List<OrderItem> listItem = new ArrayList<>();
 
     private Client client;
 
-    public Order(OrderStatus status, LocalDateTime moment, Client client) {
+    public Order(OrderStatus status, ZonedDateTime moment, Client client) {
         this.status = status;
         this.moment = moment;
         this.client = client;
     }
 
-    public LocalDateTime getMoment() {
+    public ZonedDateTime getMoment() {
         return moment;
     }
 
-    public void setMoment(LocalDateTime moment) {
+    public void setMoment(ZonedDateTime moment) {
         this.moment = moment;
     }
 
