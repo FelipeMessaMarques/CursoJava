@@ -1,5 +1,5 @@
 /*Version 1 of this code had static functions, now it doesn't anymore */
-package assuntos.MembrosEstaticos.application;
+package MembrosEstaticos.application;
 
 import assuntos.MembrosEstaticos.util.Calculator;
 import java.util.Scanner;

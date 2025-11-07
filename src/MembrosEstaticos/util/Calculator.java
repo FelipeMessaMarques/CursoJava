@@ -1,4 +1,4 @@
-package assuntos.MembrosEstaticos.util;
+package MembrosEstaticos.util;
 
 public class Calculator {
 
