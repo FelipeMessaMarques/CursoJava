@@ -1,7 +1,7 @@
 /*Version 1 of this code had static functions, now it doesn't anymore */
 package MembrosEstaticos.application;
 
-import assuntos.MembrosEstaticos.util.Calculator;
+import MembrosEstaticos.util.Calculator;
 import java.util.Scanner;
 
 public class StaticMembers {
