@@ -16,10 +16,6 @@ public class BusinessAccount extends Account {
         return loanLimit;
     }
 
-    public void setLoanLimit(Double loanLimit) {
-        this.loanLimit = loanLimit;
-    }
-
     public void loan(double amount) {
         if (amount <= loanLimit)
             balance += amount - 10;
