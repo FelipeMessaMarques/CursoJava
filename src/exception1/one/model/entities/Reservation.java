@@ -1,19 +1,19 @@
 package exception1.one.model.entities;
 
 import java.time.Duration;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.time.temporal.TemporalAccessor;
+import java.time.temporal.ChronoUnit;
 
 public class Reservation {
 
     private Integer roomNumber;
-    private LocalDateTime checkIn;
-    private LocalDateTime checkOut;
+    private LocalDate checkIn;
+    private LocalDate checkOut;
 
     private static DateTimeFormatter dtf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-    public Reservation(Integer roomNumber, LocalDateTime checkIn, LocalDateTime checkOut) {
+    public Reservation(Integer roomNumber, LocalDate checkIn, LocalDate checkOut) {
         this.roomNumber = roomNumber;
         this.checkIn = checkIn;
         this.checkOut = checkOut;
@@ -27,20 +27,20 @@ public class Reservation {
         this.roomNumber = roomNumber;
     }
 
-    public LocalDateTime getCheckIn() {
+    public LocalDate getCheckIn() {
         return checkIn;
     }
 
-    public LocalDateTime getCheckOut() {
+    public LocalDate getCheckOut() {
         return checkOut;
     }
 
     public long duration() {
-        Duration diff = Duration.between(checkIn, checkOut);
-        return diff.toDays();
+        long diff = ChronoUnit.DAYS.between(this.checkIn, this.checkOut);
+        return diff;
     }
 
-    public void updateDates(LocalDateTime checkIn, LocalDateTime checkOut) {
+    public void updateDates(LocalDate checkIn, LocalDate checkOut) {
         this.checkIn = checkIn;
         this.checkOut = checkOut;
     }
